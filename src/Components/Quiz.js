@@ -10,17 +10,20 @@ const Quiz = () => {
     const [tries, getTries] = useState(0)
     const [correct, getCorrect] = useState(0)
     const [showCorrect, setShowCorrect] = useState(false)
+    const [previousQuestion, setPreviousQuestion] = useState()
     const question = getQuestion(level)
+    // console.log(question)
     if (correct / tries > 0.9 && correct > 10) level++
     const onChoice = event => {
         getTries(tries + 1)
         if (event.target.innerText - question.correct === 0) {
             getCorrect(correct + 1)
             setShowCorrect(false)
+            setPreviousQuestion()
         } else {
-            //correctAnswer = `<div className="score-result">The correct answer to ${question.question} is ${question.correct}</div>`
+       //     console.log(question)
             setShowCorrect(true)
-            // displayCorrectAnswer(correctAnswer)
+            setPreviousQuestion(question)
         }
     }
     const saveResults = () => {
@@ -39,11 +42,13 @@ const Quiz = () => {
                 <span className="answer answer-yellow" onClick={onChoice} id="answer4">{question.answer4}</span>
             </div>
             <div className="score">
-                {showCorrect &&
-                <DisplayCorrectAnswer props={question}/>}
+                
                 <div className="score-total">Your score is {correct} out of {tries}{percent}</div>
             </div>
             <button className="button button-saveScore" onClick={saveResults}>Save Score</button>
+            {showCorrect &&
+                <DisplayCorrectAnswer props={previousQuestion}/>}
+            
         </div>
     )
 }
