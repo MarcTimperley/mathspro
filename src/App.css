@@ -1,5 +1,6 @@
 :root {
-    --main-accent-bg: rgba(53, 104, 110, 0.8);
+  --main-accent-bg: rgba(53, 104, 110, 0.8);
+  --secondary-accent-bg: rgba(194, 180, 59, 0.8);
 }
 
 .App {
@@ -11,8 +12,8 @@
   padding: 3px 0;
   height: 5vw;
   display: block;
-  position:sticky;
-  background-color: var(--main-accent-bg)
+  position: sticky;
+  background-color: var(--main-accent-bg);
 }
 
 .header-title {
@@ -34,17 +35,38 @@
 
 .button {
   margin: 5px;
-  width: 150px;
+  width: 15vw;
   height: 40px;
   position: relative;
 }
 
+.button-square {
+  height: 15vw;
+  margin: 5vw;
+  border-radius: 5px;
+  font-size: 10vw;
+}
+
+.button-accent {
+  background-color: var(--secondary-accent-bg);
+}
+
+.button-results {
+  font-size: 3vw;
+}
+
 @media (max-width: 700px) {
-    .header-title{
-        font-size:5vw;
-        line-height: 5vw;
-    }
-    .header {
-        height:10vw;
-    }
+  .header-title {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  .header {
+    height: 10vw;
+  }
+  .button {
+    width: 25vw;
+  }
+  .button-square {
+    height: 25vw;
+  }
 }

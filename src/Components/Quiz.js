@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import '../quiz.css'
 import '../App.css'
 import getQuestion from './scripts/getQuestion'
@@ -6,12 +7,16 @@ import setResults from './scripts/setResults'
 import DisplayCorrectAnswer from './DisplayCorrectAnswer'
 // import getScore from './scripts/getScore'
 let level = 1
+
 const Quiz = () => {
     const [tries, getTries] = useState(0)
     const [correct, getCorrect] = useState(0)
     const [showCorrect, setShowCorrect] = useState(false)
     const [previousQuestion, setPreviousQuestion] = useState()
-    const question = getQuestion(level)
+    const location = useLocation()
+    console.log(location)
+    const operation = location.pathname.substring(6,7)
+    const question = getQuestion(level, operation)
     // console.log(question)
     if (correct / tries > 0.9 && correct > 10) level++
     const onChoice = event => {

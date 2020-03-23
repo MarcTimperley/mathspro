@@ -23,7 +23,7 @@ function App() {
           <Route path="/results">
             <Results />
           </Route>
-          <Route path="/quiz">
+          <Route path="/quiz/:operation">
             <Quiz />
           </Route>
           <Route path="/">

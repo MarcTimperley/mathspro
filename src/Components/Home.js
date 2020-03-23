@@ -7,9 +7,12 @@ import '../App.css'
 const Home = () => {
     return (
         <div className="home">
-        <button className="button quiz-button" id="startQuiz"><Link className="link" to="/quiz">Start Quiz</Link></button>
+        <Link className="link" to={{pathname:"/quiz/+"}}><button className="button button-accent button-quiz button-square" id="startQuiz">+</button></Link>
+    <Link className="link" to={{pathname:"/quiz/-"}}><button className="button button-accent button-quiz button-square" id="startQuiz">{`\u2212`}</button></Link>
+        <Link className="link" to={{pathname:"/quiz/x"}}><button className="button button-accent button-quiz button-square" id="startQuiz">{`\u00D7`}</button></Link>
+        <Link className="link" to={{pathname:"/quiz/÷"}}><button className="button button-accent button-quiz button-square" id="startQuiz">{`\u00F7`}</button></Link>
         <br />
-        <button className="button results-button" id="results"><Link className="link" to="/results">Results</Link></button>
+        <Link className="link" to="/results"><button className="button button-accent button-results button-square" id="results">Results</button></Link>
         </div>
 
     )

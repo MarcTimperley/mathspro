@@ -28,7 +28,7 @@ const Results = () => {
         <div className="results">
             <table className="resultsTable table">
                 <tbody>
-                    {renderTableHeader()}
+                    <tr>{renderTableHeader()}</tr>
                     {renderTableData()}
                 </tbody>
             </table>
