@@ -22,7 +22,7 @@ const Quiz = () => {
     const operation = location.pathname.substring(6, 7)
     const question = getQuestion(level, operation)
     // console.log(question)
-    if (levelCorrect / levelTries > 0.9 && levelCorrect > 10) {
+    if (levelCorrect / levelTries > 0.9 && levelCorrect > 9) {
         level++
         setlevelCorrect(0)
         setlevelTries(0)
