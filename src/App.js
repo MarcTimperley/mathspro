@@ -10,6 +10,7 @@ import Quiz from './Components/Quiz'
 import About from './Components/About'
 import Home from './Components/Home'
 import Results from './Components/Results'
+import Fireworks from './Components/Fireworks' //testing component
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/results">
             <Results />
+          </Route>
+          <Route path="/fireworks">
+            <Fireworks />
           </Route>
           <Route path="/quiz/:operation">
             <Quiz />

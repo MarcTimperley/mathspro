@@ -65,6 +65,11 @@
   position: relative;
 }
 
+.score-level {
+  float: right;
+  right: 5vw;
+}
+
 .button-saveScore {
   top: 100px;
 }

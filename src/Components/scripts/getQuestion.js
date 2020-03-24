@@ -41,7 +41,7 @@ const getQuestion = (level, operation) => {
             break
     }
     let question = { question: `What is ${num1.toLocaleString()} ${operation} ${num2.toLocaleString()}?`, answer1, answer2, answer3, answer4, correct }
-    const correctNo = Math.floor(Math.random() * 3) + 1
+    const correctNo = Math.floor(Math.random() * 4) + 1
     question['answer' + correctNo] = correct
     return question
 }
