@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="170 170 300 300">
-   <path stroke-width="20" stroke-linecap="round" stroke="#8B0000" d="M200 200 l80 0" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#8B0000" d="M240 160 l0 80" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#2E8B57" d="M340 200 l80 0" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#A0522D" d="M200 300 l80 80" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#A0522D" d="M200 380 l80 -80" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#FFD700" d="M340 340 l80 0" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#FFD700" d="M382 300 l0 0" />
-   <path stroke-width="20" stroke-linecap="round" stroke="#FFD700" d="M382 380 l0 0" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
+   <path stroke-width="20" stroke-linecap="round" stroke="#8B0000" d="M20 60 l80 0" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#8B0000" d="M60 20 l0 80" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#2E8B57" d="M160 60 l80 0" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#A0522D" d="M20 160 l80 80" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#A0522D" d="M20 240 l80 -80" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#1E90FF" d="M160 200 l80 0" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#1E90FF" d="M202 160 l0 0" />
+   <path stroke-width="20" stroke-linecap="round" stroke="#1E90FF" d="M202 240 l0 0" />
 </svg>
