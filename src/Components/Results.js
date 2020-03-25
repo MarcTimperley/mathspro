@@ -1,10 +1,14 @@
 import React from 'react'
 import '../App.css'
 import './Results.css'
-import getResults from './scripts/getResults'
 
 const Results = () => {
-    const results = getResults()
+    let results
+    const ls = window.localStorage.getItem('mathsPro')
+    if (ls) results = JSON.parse(ls)
+    const resetResults = () => {
+        window.localStorage.setItem('mathsPro',"")
+    }
     const renderTableHeader = () => {
         if (!results) return null
         let header = Object.keys(results[0])
@@ -37,6 +41,7 @@ const Results = () => {
                     {renderTableData()}
                 </tbody>
             </table>
+            <button className="button" onClick={resetResults}>Reset Results</button> 
         </div>
 
     )
