@@ -57,9 +57,9 @@
   display: block;
   position: absolute;
   z-index: 2;
-  bottom:15%;
-  left:35%;
-  font-size:4vw;
+  bottom: 15%;
+  left: 35%;
+  font-size: 4vw;
 }
 
 .score-total {
@@ -107,5 +107,15 @@
   .answer {
     box-shadow: 0 10px 5px 0px rgb(113, 129, 145);
   }
-  
+  .score-total {
+    display: block;
+  }
+  .score-score {
+    float: none;
+    left: 0;
+  }
+  .score-level {
+    float: none;
+    right: 0;
+  }
 }
