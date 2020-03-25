@@ -1,6 +1,6 @@
 :root {
-  --main-accent-bg: rgba(53, 104, 110, 0.8);
-  --secondary-accent-bg: rgba(194, 180, 59, 0.8);
+  --main-accent-bg: rgb(89, 177, 187);
+  --secondary-accent-bg: rgb(211, 200, 102);
 }
 
 .App {
@@ -47,7 +47,7 @@
 .button-square {
   height: 15vw;
   margin: 2vw;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 10vw;
 }
 
@@ -68,9 +68,9 @@
     height: 10vw;
   }
   .button {
-    width: 25vw;
+    width: 35vw;
   }
   .button-square {
-    height: 25vw;
+    height: 35vw;
   }
 }
