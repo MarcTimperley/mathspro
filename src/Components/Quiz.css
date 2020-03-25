@@ -55,9 +55,11 @@
 
 .score-correct {
   display: block;
-  position: relative;
-  bottom:-25%;
-  font-size:3em;
+  position: absolute;
+  z-index: 2;
+  bottom:15%;
+  left:35%;
+  font-size:4vw;
 }
 
 .score-total {
@@ -69,7 +71,10 @@
   float: right;
   right: 5vw;
 }
-
+.score-score {
+  float: left;
+  left: 5vw;
+}
 .button-saveScore {
   top: 100px;
 }

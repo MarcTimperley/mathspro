@@ -15,13 +15,15 @@ const Results = () => {
     const renderTableData = () => {
         if (!results) return null
         return results.map((result, index) => {
-            const { date, operation, level, score } = result //destructuring
+            const { date, operation, level, score, correct } = result //destructuring
             return (
                 <tr key={date}>
                     <td>{new Date(date).toLocaleString()}</td>
-                    <td>{operation}</td>
                     <td>{level}</td>
-                    <td>{score}%</td>
+                    <td>{score}</td>
+                    <td>{operation}</td>
+                    
+                    <td>{correct}%</td>
                 </tr>
             )
         })
